@@ -1,0 +1,12 @@
+<div *ngIf="apod">
+  <h2>{{ apod.title }}</h2>
+
+  <img
+    *ngIf="apod.media_type === 'image'"
+    [src]="apod.url"
+    alt="APOD"
+    width="500"
+  />
+
+  <p>{{ apod.explanation }}</p>
+</div>

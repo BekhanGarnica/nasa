@@ -1,0 +1,11 @@
+<h2 class="title" *ngIf="dates.length > 0">NEOS</h2>
+
+<div class="cards-container">
+  <div class="card" *ngFor="let neo of dates">
+    <p><strong>Nombre:</strong> {{ neo.name }}</p>
+    <p>
+      <strong>Peligroso:</strong>
+      {{ neo.is_potentially_hazardous_asteroid ? "Sí" : "No" }}
+    </p>
+  </div>
+</div>
